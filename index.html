@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <div class="display">
+                <input type="text" placeholder="0" id="result">
+            </div>
+            <div>
+                <input type="button" value="AC" class="opr" onclick="clearscreen()">
+                <input type="button" value="DEL" class="opr" onclick="del()">
+                <input type="button" value="." class="opr" onclick="displayvalue('.')">
+                <input type="button" value="/" class="opr" onclick="displayvalue('/')">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="displayvalue('7')">
+                <input type="button" value="8" onclick="displayvalue('8')">
+                <input type="button" value="9" onclick="displayvalue('9')">
+                <input type="button" value="*" class="opr" onclick="displayvalue('*')">
+            </div>
+
+            <div>
+                <input type="button" value="4" onclick="displayvalue('4')">
+                <input type="button" value="5" onclick="displayvalue('5')">
+                <input type="button" value="6" onclick="displayvalue('6')">
+                <input type="button" value="-" class="opr" onclick="displayvalue('-')">
+            </div>
+
+            <div>
+                <input type="button" value="1" onclick="displayvalue('1')">
+                <input type="button" value="2" onclick="displayvalue('2')">
+                <input type="button" value="3" onclick="displayvalue('3')">
+                <input type="button" value="+" class="opr"  onclick="displayvalue('+')">
+            </div>
+            <div>
+                <input type="button" value="00"  onclick="displayvalue('00')">
+                <input type="button" value="0" onclick="displayvalue('0')">
+                <input type="button" value="=" class="eql opr" onclick="calculate()">
+            </div>
+
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
